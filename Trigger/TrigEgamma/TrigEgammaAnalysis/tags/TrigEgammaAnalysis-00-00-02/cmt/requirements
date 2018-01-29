@@ -1,0 +1,26 @@
+package TrigEgammaAnalysis
+author Taylor Childers <childers@cern.ch>
+
+private
+use AtlasPolicy                 AtlasPolicy-01-*
+use GaudiInterface              GaudiInterface-01-*            External
+use AtlasCLHEP                  AtlasCLHEP-*                   External
+use StoreGate                   StoreGate-*                    Control
+use AthenaBaseComps             AthenaBaseComps-*              Control
+use TrigDecisionTool            TrigDecisionTool-*             Trigger/TrigAnalysis
+use TrigObjectMatching          TrigObjectMatching-*           Trigger/TrigAnalysis
+use AnalysisTriggerEvent        AnalysisTriggerEvent-*         PhysicsAnalysis/AnalysisTrigger
+use EventInfo                   EventInfo-*                    Event
+use TrigParticle                TrigParticle-*                 Trigger/TrigEvent
+use egammaEvent                 egammaEvent-*                  Reconstruction/egamma
+use VxVertex                    VxVertex-*                     Tracking/TrkEvent
+use TrigCaloEvent               TrigCaloEvent-*                Trigger/TrigEvent
+
+# for TLorentzVector
+apply_tag ROOTMathLibs
+
+library TrigEgammaAnalysis *.cxx -s=components *.cxx
+
+apply_pattern component_library
+apply_pattern declare_joboptions files="*.py"
+

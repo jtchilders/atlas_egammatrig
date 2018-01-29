@@ -1,0 +1,17 @@
+2011-03-18 Taylor Childers <childers@cern.ch>
+      * Tag as TrigEgammaAnalysis-00-00-04
+      * Added many classes for making a tag-and-probe Zee analysis
+
+2011-02-18 Taylor Childers
+      * Tag as TrigEgammaAnalysis-00-00-03
+      * Added grid job options files and grid combine files
+      * Added RateHistory class
+
+2011-02-15 Taylor Childers
+      * Tag as TrigEgammaAnalysis-00-00-02
+      * Added job options file.
+      * Added TrigDecisionTool header include to TRT.
+
+2011-02-15 Taylor Childers <childers@cern.ch>
+      * Tag as TrigEgammaAnalysis-00-00-01
+      * basic new analysis package, no real content, just framework

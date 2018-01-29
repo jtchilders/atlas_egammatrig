@@ -1,0 +1,11 @@
+package DataSelectorAlgs
+author Taylor Childers <childers@cern.ch>
+
+use TrigDecisionTool            TrigDecisionTool-*             Trigger/TrigAnalysis
+use egammaEvent                 egammaEvent-*                  Reconstruction/egamma
+use StoreGate                   StoreGate-*                    Control
+
+library DataSelectorAlgs *.cxx -s=components *.cxx
+
+apply_pattern component_library
+apply_pattern declare_joboptions files="*.py"
